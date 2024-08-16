@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root
+{
+    --clr1: rgb(21, 12, 104);
+    --clr2: rgb(236, 68, 90);
+    --clr3: #fff;
+    --clr4: #000;
+    --clr5: lightgray;
+    --clr6: yellow;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'PT Sans', sans-serif;
+    border: none;
+}
+
+html {
+    font-size: 56%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar
+{
+    width: 1rem;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--clr1);
+}
+section
+{
+    padding: 7rem 9%;
+    margin-top: 7rem;
+}
+.btn
+{
+    margin-top: 2rem;
+    padding: 1.3rem 4rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    color: var(--clr3);
+    background-color: var(--clr2);
+    box-shadow: rgba(0,0,0,0.4);
+    transition: all 0.3s ease all;
+    cursor: pointer;
+    outline: none;
+    color: var(--clr3);
+}
+bn:hover
+{
+    transform: translateY(-1rem);
+    transition: all .5s ease;
+}
+
+/* ----------header section--------- */
+.head
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--clr1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-heart
+{
+    color: red;
+}
+.head .logo
+{
+    font-size: 2.5rem;
+    color: var(--clr3);
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+span
+{
+    color: var(--clr5);
+}
+
+.head .navbar {
+    font-size: 1.8rem;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.head .navbar a {
+    padding-left: 1.5rem;
+    color: var(--clr3);
+}
+
+#menu-bar {
+    display: none;
+    color: var(--clr3);
+}
+
+/* -------home----------- */
+.home
+{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.search-box {
+    margin: 20rem 0 0 0;
+    color: var(--clr3);
+    text-align: center;
+}
+.search-box h1
+{
+    font-size: 5.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+.search-box p
+{
+    font-size: 1.8rem;
+    margin: .5rem;
+}
+
+.search-field {
+    width: 25rem;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--clr2);
+}
