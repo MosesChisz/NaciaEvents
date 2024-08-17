@@ -124,7 +124,7 @@ span
 /* -------home----------- */
 .home
 {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url();
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url("wall.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
