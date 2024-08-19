@@ -14,7 +14,7 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#service">Service</a>
-            <a href="#events">Events</a>
+            <a href="#vendor">Events</a>
             <a href="#venue">Venue</a>
             <a href="#invite">Invite</a>
             <a href="#contact">Contact</a>
@@ -281,4 +281,25 @@
          </footer>
 
 </body>
+<script>
+    let menu = document.querySelector('#menu-bar');
+    let head = document.querySelector('.head .navbar');
+    menu.onclick = () =>
+    {
+        head.classList.toggle('active');
+    };
+
+    window.onscroll = () =>
+    {
+        head.classList.remove('active');
+        if(window.screenY > 60)
+        {
+            document.querySelector('#menu-bar').classList.add('active');
+        }
+        else
+        {
+            document.querySelector('#menu-bar').classList.remove('active');
+        }
+    }
+</script>
 </html>
